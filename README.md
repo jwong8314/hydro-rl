@@ -339,3 +339,11 @@ cd python && python3 -m hydro_rl.restart_demo
 - The coordinator is a single Hydro `Process`. Replicating or partitioning it (a
   Hydro `Cluster`, keyed by group) is the obvious next Hydro step, and the place
   where the simulator's cluster support would matter.
+
+## License
+
+Non-commercial use only (education, research, evaluation). See
+[LICENSE](LICENSE). The terms are adapted from the Yale University
+Non-Commercial License Agreement that CertiKOS is distributed under.
+Hydro and Miles, the submodules under `third_party/`, are not covered:
+they keep their own Apache 2.0 licenses.
