@@ -1,0 +1,27 @@
+[package]
+name = "rl_coordinator"
+publish = false
+version = "0.0.0"
+edition = "2024"
+
+# Hydro is consumed from the vendored checkout in ../third_party/hydro so the
+# prototype is pinned to the exact commit we read while designing it.
+[dependencies]
+hydro_lang = { path = "../third_party/hydro/hydro_lang" }
+hydro_std = { path = "../third_party/hydro/hydro_std" }
+stageleft = "0.16.0"
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0"
+
+[build-dependencies]
+stageleft_tool = "0.16.0"
+
+[dev-dependencies]
+hydro_deploy = { path = "../third_party/hydro/hydro_deploy/core" }
+hydro_lang = { path = "../third_party/hydro/hydro_lang", features = ["deploy", "sim"] }
+tokio = { version = "1.29.0", features = ["full"] }
+tokio-util = { version = "0.7.5", features = ["codec"] }
+futures = "0.3.0"
+
+[lints.clippy]
+uninlined_format_args = "allow"

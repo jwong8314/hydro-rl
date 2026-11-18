@@ -1,0 +1,6 @@
+[submodule "third_party/hydro"]
+	path = third_party/hydro
+	url = https://github.com/hydro-project/hydro.git
+[submodule "third_party/miles"]
+	path = third_party/miles
+	url = https://github.com/radixark/miles.git
